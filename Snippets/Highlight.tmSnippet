@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>{++ ${0:insert} ++}</string>
+	<string>{==${0:$TM_SELECTED_TEXT}==}{&gt;&gt;$1&lt;&lt;}</string>
+	<key>keyEquivalent</key>
+	<string>^~h</string>
 	<key>name</key>
-	<string>Add ++ Mark</string>
+	<string>Highlight</string>
 	<key>scope</key>
 	<string>text.html.markdown -meta.disable-markdown</string>
-	<key>tabTrigger</key>
-	<string>++</string>
 	<key>uuid</key>
-	<string>BC6BF34D-70E5-4D83-8FA1-AF2A8498A26F</string>
+	<string>C1C7907A-2725-4F61-A4C4-5826C68FA824</string>
 </dict>
 </plist>

@@ -2,35 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>autoScrollOutput</key>
-	<true/>
 	<key>beforeRunningCommand</key>
-	<string>saveActiveFile</string>
+	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby -wKU
+	<string>#!/usr/bin/env ruby18 -wKU
+def accept(markup)
+  markup.sub!(/\{--(.+?)--\}/){ |m| ''  }
+  markup.sub!(/\{\+\+(.+?)\+\+\}/){ |m| $1  }
+  markup.sub(/\{~~(.+?)~&gt;(.+?)~~\}/){ |m| $2  }
+end
 
-require "#{ENV["TM_BUNDLE_SUPPORT"]}/bin/accept_critic"
-
-AcceptCritic.new().reject_all(ENV['TM_FILEPATH'])
-</string>
+print accept($stdin.read)</string>
 	<key>input</key>
-	<string>document</string>
+	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>^~@r</string>
+	<string>^~y</string>
 	<key>name</key>
-	<string>Reject All</string>
+	<string>Accept</string>
 	<key>outputCaret</key>
-	<string>heuristic</string>
+	<string>afterOutput</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>replaceDocument</string>
+	<string>replaceInput</string>
 	<key>scope</key>
 	<string>text.html.markdown -meta.disable-markdown</string>
 	<key>uuid</key>
-	<string>C853FD59-653A-4A21-ACF1-4E0E5D896BF0</string>
+	<string>384FCAAD-4FFE-4B47-96DA-CA097D8A85FF</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>

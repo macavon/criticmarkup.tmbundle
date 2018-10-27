@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>{&gt;&gt;${0:$TM_SELECTED_TEXT}&lt;&lt;}</string>
+	<string>{~~$TM_SELECTED_TEXT~&gt;$0~~}</string>
 	<key>keyEquivalent</key>
-	<string>@/</string>
+	<string>^~s</string>
 	<key>name</key>
-	<string>Comment</string>
+	<string>Substitute</string>
 	<key>scope</key>
 	<string>text.html.markdown -meta.disable-markdown</string>
 	<key>uuid</key>
-	<string>677CAAD5-9F09-4F1A-9C03-353B7A682BE4</string>
+	<string>2A024E2E-643C-4872-9216-86A5F5C7434A</string>
 </dict>
 </plist>

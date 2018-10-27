@@ -5,42 +5,30 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
-$: &lt;&lt; ENV['TM_SUPPORT_PATH'] + '/lib'
-require 'escape'
-def esc(str)
-  e_sn(str).gsub(/\}/, '\\}') # escaping inside a placeholder
+	<string>#!/usr/bin/env ruby18 -wKU
+def unhighlight(markup)
+  markup.sub(/\{==(.+?)==\}(\{&gt;&gt;[^&lt;]+?&lt;&lt;\})?/){ |m| $1  }
 end
 
-s = STDIN.read
-if s.empty? then
-  print "{==$1==}"
-elsif s =~ /^\{==(.*)==\}$/ then
-  print "${1:#{esc $1}}"
-elsif ENV.has_key? 'TM_SELECTED_TEXT'
-  print "${1:\{==#{esc s}==\\}}"
-else
-  print "\{==#{e_sn s}==\}"
-end
-</string>
+print unhighlight($stdin.read)</string>
 	<key>input</key>
-	<string>word</string>
+	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@H</string>
+	<string>^~k</string>
 	<key>name</key>
-	<string>Highlight</string>
+	<string>Unhighlight</string>
 	<key>outputCaret</key>
-	<string>selectOutput</string>
+	<string>afterOutput</string>
 	<key>outputFormat</key>
-	<string>snippet</string>
+	<string>text</string>
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>scope</key>
 	<string>text.html.markdown -meta.disable-markdown</string>
 	<key>uuid</key>
-	<string>50AE2294-02C1-4040-81D4-722DC0111905</string>
+	<string>252D98D9-626F-4F8A-9818-18C0AB990F51</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>
