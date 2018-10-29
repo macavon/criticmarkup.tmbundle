@@ -9,21 +9,24 @@
 	<key>description</key>
 	<string>&lt;a href="http://criticmarkup.com"&gt;CriticMarkup&lt;/a&gt; bundle for TextMate.
 </string>
-	<key>mainMenu</key>
-	<dict>
-		<key>items</key>
-		<array>
-			<string>96A678EC-1587-41FB-B63B-8361FD437E2A</string>
-			<string>39E312C8-D746-41C5-8C23-F182B38CD060</string>
-			<string>70BB8312-D48C-4616-B914-C88E9535338E</string>
-			<string>50AE2294-02C1-4040-81D4-722DC0111905</string>
-			<string>3201904C-15EB-42D3-AEA6-DB65E6181025</string>
-			<string>------------------------------------</string>
-			<string>8BC1FE1B-73CC-4E60-BDA2-F1DAA77F94DE</string>
-			<string>C853FD59-653A-4A21-ACF1-4E0E5D896BF0</string>
-			<string>------------------------------------</string>
-		</array>
-	</dict>
+<key>mainMenu</key>
+<dict>
+	<key>items</key>
+	<array>
+		<string>FC1C0D0C-E235-41C1-B312-E5D599FF94FE</string>
+		<string>52C293D6-E1AE-4E5D-9334-498725271851</string>
+		<string>2A024E2E-643C-4872-9216-86A5F5C7434A</string>
+		<string>C1C7907A-2725-4F61-A4C4-5826C68FA824</string>
+		<string>677CAAD5-9F09-4F1A-9C03-353B7A682BE4</string>
+		<string>------------------------------------</string>
+		<string>AC666A15-1DD0-4D05-9285-93026F728841</string>
+		<string>384FCAAD-4FFE-4B47-96DA-CA097D8A85FF</string>
+		<string>3CCD92D8-18FB-4BB5-BD6A-F77983A65C71</string>
+		<string>------------------------------------</string>
+		<string>252D98D9-626F-4F8A-9818-18C0AB990F51</string>
+		<string>77ADABC1-D54B-4D77-86BA-73325E7F2507</string>
+	</array>
+</dict>
 	<key>name</key>
 	<string>CriticMarkup</string>
 	<key>uuid</key>
