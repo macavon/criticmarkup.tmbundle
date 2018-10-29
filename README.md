@@ -2,42 +2,30 @@
 
 This is a [TextMate][tm] Bundle to work with [CriticMarkup][cm].  It supports syntax highlighting and the basic commands to work with plain text editorial annotations.
 
-Many thanks go to Hilton Lipschitz who contributed to this bundle, adding very convenient commands to trigger CriticMarkup marks.  Hilton can be found [on Twitter (@hiltmon)](http://www.twitter.com/hiltmon), [on GitHub](https://github.com/hiltmon), and  [on his website  `hiltmon.com`](http://www.hiltmon.com).  
+This fork was done mainly for my own use, to adjust the commands to suit my way of working. I leave it here in case it is useful to anyone else. No guarantees – I know it isn't foolproof by any means.
+
+Main differences from the origin:
+
+* Simplified by replacing commands by snippets where possible.
+* Changed keyboard equivalents, all use ctl-opt modifiers now
+* Removed accept all and reject all.
+* Added Next (macro) to find next mark
+* Added Accept and Reject commands to accept/reject current command
+
 
   [tm]: https://github.com/textmate/textmate "textmate on GitHub"
-  
-## Keyboard Shortcuts
 
-*   Addition `{++ ++}` (⇧⌘A)
-*   Deletion `{-- --}` (⌘⌫)
-*   Substitution `{~~ ~> ~~}` (⇧⌘S)
-*   Comment `{>> <<}` (⌘/)
-*   Highlight `{== ==}{>> <<}` (⇧⌘H)
-*   Accept all marks (⌃⌥⌘A)
-*   Reject all marks (⌃⌥⌘R)
-
-## Sample file
-
-[`sample.critic`](http://github.com/DivineDominion/criticmarkup.tmbundle/blob/master/sample.critic):
-
-<img src="http://github.com/DivineDominion/criticmarkup.tmbundle/raw/master/sample.png" width="606" height="391" />
 
 ## Installation
 
-To install:
-
-    mkdir -p ~/Library/Application\ Support/TextMate/Bundles
-    cd ~/Library/Application\ Support/TextMate/Bundles
-    git clone git://github.com/DivineDominion/criticmarkup.tmbundle "CriticMarkup.tmBundle"
-    osascript -e 'tell app "TextMate" to reload bundles'
-
+The bundle is not supported by the Textmate team, so you need to install it by hand. Download or clone this repository, then double-click the `.tmbundle` to install.
 
 # The CriticMarkup syntax
 
 [![CriticMarkup][cmimg]][cm]
 
   [cmimg]: http://high90.com/img/CriticMarkup-400px.png
-  
+
 [CriticMarkup][cm] was created by [Gabe Weatherhead][md] and [Eric Hess][mfb].
 
   [cm]: http://criticmarkup.com
